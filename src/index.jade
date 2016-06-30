@@ -1,0 +1,26 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='#{description}')
+    meta(name='keywords', content='#{keywords}')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    //-------------------------
+    title #{title}
+    link(href='main.css' rel='stylesheet' type='text/css' data-skrollr-stylesheet)
+  body
+
+    #container
+
+    //- script
+    script(src="./js/jquery.min.js")
+    script(src="./js/dat.gui.min.js")
+    script(src="./js/ShaderLoader.min.js")
+    script(src="./js/Tween.js")
+    script(src="./js/three.min.js")
+    script(src='bundle.js', type='text/javascript')
+
+    //- shader
+    script(data-src="./js/shader/sample.vert",data-name="myShader",type="x-shader/x-vertex")
+    //- script(data-src="./js/shader/sample.frag",data-name="myShader",type="x-shader/x-fragment")
+    script(data-src="./js/shader/pixelation.frag",data-name="myShader",type="x-shader/x-fragment")
